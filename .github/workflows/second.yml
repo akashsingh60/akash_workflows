@@ -1,8 +1,7 @@
 name: akash-wf2
 
-on:
-  push:
-    branches: ["main"]
+on: 
+  workflow_dispatch:
 
 jobs:
   second_job:
@@ -12,7 +11,7 @@ jobs:
   - uses: actions/checkout@v3
 
   - name: trying to create second workflow
-  run: echo Second workflow teyar krr rhe h
+    run: echo Second workflow teyar krr rhe h
 
   
 
